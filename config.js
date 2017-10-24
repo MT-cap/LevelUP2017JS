@@ -1,3 +1,5 @@
+var using = require('jasmine-data-provider');
+
 // An example configuration file
 exports.config = {
     // The address of a running selenium server.
@@ -11,7 +13,7 @@ exports.config = {
     // They may include glob patterns.
     // specs: 'spec.js',
     suites:{
-        Jasmine: 'spec/jasmine/dataDrivenSpec.js'
+        suite1: 'spec/jasmine/dataDrivenSpec.js'
     },
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {

@@ -1,10 +1,10 @@
 var data = {
     "contact us":{
-        'cssSelector':"#contact-link",
+        "cssSelector":"#contact-link",
         "value":"Contact us"
     },
     "shop":{
-        'cssSelector':".shopping_cart",
+        "cssSelector":".shopping_cart",
         "value":"Cart (empty)"
     }
 }
