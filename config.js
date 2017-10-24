@@ -16,7 +16,9 @@ exports.config = {
     // specs: 'spec.js',
     suites:{
         jasmine: 'spec/jasmine/*.js',
-        pageObject: 'spec/pageObjectTest/*.js'
+        pageObject: 'spec/pageObjectTest/*.js',
+        flowTest: 'spec/pageObjectTest/flowtest.js',
+        ex1Test: 'spec/pageObjectTest/ex1Test.js'
     },
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
