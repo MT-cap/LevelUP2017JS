@@ -1,0 +1,6 @@
+{"name": "LevelUP2017JS ",
+    "dependencies": { 
+        "webdriver-manager":"12.0.6",
+        "protractor": "5.2.0"
+    }, 
+}
