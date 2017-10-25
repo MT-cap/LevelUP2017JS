@@ -27,6 +27,6 @@ exports.config = {
     onPrepare:function(){
         global.using = using;
         global.pageObjectDir = __dirname+"/pageObject";
-        global.ignoreSynchronization = true;
+        browser.ignoreSynchronization = true;
     },
 };

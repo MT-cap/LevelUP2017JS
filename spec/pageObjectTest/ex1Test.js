@@ -32,10 +32,10 @@ describe('Protractor: http://automationpractice.com', function() {
             .toEqual('Faded Short Sleeve T-shirts - My Store');
 
         // Na stronie produktu spawrdzić czy opis zawiera wiecej niż 8 znaków i czy stan jest „new”
-        // expect(womenTopsProductPage.productDescription
-        //     .getText()
-        //     .length)
-        //     .toBeGreaterThan(8);
+        expect(womenTopsProductPage.productDescription
+            .getText()
+            .length)
+            .toBeGreaterThan(8);
         expect(womenTopsProductPage.productCondition
             .getText())
             .toEqual('New');
