@@ -28,5 +28,6 @@ exports.config = {
         global.using = using;
         global.pageObjectDir = __dirname+"/pageObject";
         browser.ignoreSynchronization = true;
+        browser.driver.manage().window().maximize();
     },
 };
