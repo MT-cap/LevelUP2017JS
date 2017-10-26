@@ -19,7 +19,8 @@ exports.config = {
         pageObject: 'spec/pageObjectTest/*.js',
         flowTest: 'spec/pageObjectTest/flowtest.js',
         ex1Test: 'spec/pageObjectTest/ex1Test.js',
-        ex2Test: 'spec/pageObjectTest/ex2Test.js'
+        ex2Test: 'spec/pageObjectTest/ex2Test.js',
+        ex2Test_dataDriven: 'spec/pageObjectTest/ex2Test_dataDriven.js'
     },
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
