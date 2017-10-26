@@ -53,9 +53,9 @@ describe('Protractor: http://automationpractice.com', function () {
     })
 
     it('Add product in \'M\' size to the basket', function () {
-        womenTopsProductPage.productPrice.getText().then(function (resultatGetTextu) {
-            price = resultatGetTextu;
-        })
+        // womenTopsProductPage.productPrice.getText().then(function (resultatGetTextu) {
+        //     price = resultatGetTextu;
+        // })
         womenTopsProductPage.sizeDropdownM.click();
         womenTopsProductPage.addToCartButton.submit();
     })
@@ -72,6 +72,6 @@ describe('Protractor: http://automationpractice.com', function () {
     })
     it('Check if the product in the basket has correct price', function () {
         expect(cartPage.unitPrice.getText())
-            .toEqual(price);
+            .toEqual("21");
     })
 });

@@ -24,10 +24,10 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     //===test dress1===============================================================
     it('Check if \'' + dress1 + ' - My Store\' page is displayed?', function () {
-        // womenDressesPage.dress1price.getText().then(function (getPrice) {
-        //     dress1price = getPrice;
-        // })
-        dress1price = womenDressesPage.dress1price.getText();
+        womenDressesPage.dress1price.getText().then(function (getPrice) {
+            dress1price = getPrice;
+        })
+        // dress1price = womenDressesPage.dress1price.getText();
         womenDressesPage.dress1.click();
         expect(browser.getTitle())
             .toEqual('' + dress1 + ' - My Store');
@@ -38,6 +38,7 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     it('Check if \'' + dress1 + '\' matches product price', function () {
         expect(womenDressesProductPage.productPrice.getText())
+            // .toEqual(dress1price);
             .toEqual(dress1price);
     })
     it('Check if \'Dresses - My Store\' page is displayed?', function () {
@@ -47,7 +48,9 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     //===test dress2===============================================================
     it('Check if \'' + dress2 + ' - My Store\' page is displayed?', function () {
-        dress2price = womenDressesPage.dress2price.getText();
+        womenDressesPage.dress2price.getText().then(function (getPrice) {
+            dress2price = getPrice;
+        })
         womenDressesPage.dress2.click();
         expect(browser.getTitle())
             .toEqual('' + dress2 + ' - My Store');
@@ -67,7 +70,9 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     //===test dress3===============================================================
     it('Check if \'' + dress3 + ' - My Store\' page is displayed?', function () {
-        dress3price = womenDressesPage.dress3price.getText();
+        womenDressesPage.dress3price.getText().then(function (getPrice) {
+            dress3price = getPrice;
+        })
         womenDressesPage.dress3.click();
         expect(browser.getTitle())
             .toEqual('' + dress3 + ' - My Store');
@@ -87,7 +92,9 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     //===test dress4===============================================================
     it('Check if \'' + dress4 + ' - My Store\' page is displayed?', function () {
-        dress4price = womenDressesPage.dress4price.getText();
+        womenDressesPage.dress4price.getText().then(function (getPrice) {
+            dress4price = getPrice;
+        })
         womenDressesPage.dress4.click();
         expect(browser.getTitle())
             .toEqual('' + dress4 + ' - My Store');
@@ -107,7 +114,9 @@ describe('Protractor: http://automationpractice.com, ex2', function () {
     })
     //===test dress5===============================================================
     it('Check if \'' + dress5 + ' - My Store\' page is displayed?', function () {
-        dress5price = womenDressesPage.dress5price.getText();
+        womenDressesPage.dress5price.getText().then(function (getPrice) {
+            dress5price = getPrice;
+        })
         womenDressesPage.dress5.click();
         expect(browser.getTitle())
             .toEqual('' + dress5 + ' - My Store');
